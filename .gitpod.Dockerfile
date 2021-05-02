@@ -1,5 +1,7 @@
 FROM gitpod/workspace-full
 
+LABEL maintainer="giridharsalana@gmail.com"
+
 # Install custom tools, runtime, etc.
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends apt-utils && \
     sudo apt-get install --quiet --yes software-properties-common openssh-client git && \
