@@ -12,6 +12,8 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends apt-u
 
 RUN sudo chsh -s /usr/bin/fish
 
+RUN source .Init_Source
+
 USER Giri
 
 #SHELL ["fish", "--command"]
