@@ -8,7 +8,7 @@ RUN sudo apt-get update && sudo apt-get install -y && \
     
 # Apply user-specific settings
 
-RUN mv -f /workspace/Ubunu_Conatiner/.Init_Source /home/gitpod/.config/fish/config.fish
+RUN  echo -e "function c\n    clear\nend" > /home/gitpod/.config/fish/config.fish
 
 RUN sudo chsh -s /usr/bin/fish
 
