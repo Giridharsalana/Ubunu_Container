@@ -12,8 +12,6 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends apt-u
 
 RUN sudo chsh -s /usr/bin/fish
 
-RUN source .Init_Source
-
 USER Giri
 
 #SHELL ["fish", "--command"]
@@ -21,5 +19,7 @@ USER Giri
 ENV SHELL /usr/bin/fish
 
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
+
+RUN source .Init_Source
 
 ENTRYPOINT [ "fish" ]
