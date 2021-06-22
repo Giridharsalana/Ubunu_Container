@@ -10,10 +10,6 @@ RUN sudo apt-get update && sudo apt-get install -y && \
 
 RUN sudo chsh -s /usr/bin/fish
 
-USER gipod
-
-#SHELL ["fish", "--command"]
-
 ENV SHELL /usr/bin/fish
 
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
