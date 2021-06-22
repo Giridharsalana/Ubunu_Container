@@ -8,6 +8,8 @@ RUN sudo apt-get update && sudo apt-get install -y && \
     
 # Apply user-specific settings
 
+RUN mkdir -p /home/gitpod/.config/fish/
+
 RUN  echo -e "function c\n    clear\nend" > /home/gitpod/.config/fish/config.fish
 
 RUN sudo chsh -s /usr/bin/fish
