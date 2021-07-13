@@ -3,7 +3,7 @@ FROM gitpod/workspace-full
 LABEL maintainer="giridharsalana@gmail.com"
 
 # Install custom tools, runtime, etc.
-RUN sudo apt-get update && sudo apt-get install -y && \
+RUN sudo apt-get update -y && sudo apt-get upgrade -y && \
     sudo apt-get install --quiet --yes fish
     
 # Apply user-specific settings
