@@ -67,7 +67,7 @@ def main(fileName, sizeOfTheCell, layerNum):
 
     cv2.imwrite("image.bmp", binaryImage)
 
-    gen_layer = {"layer": int(layerNum), "datatype": 0}
+    gen_layer = {"layer": int(layerNum), "datatype": 250}
 
     print(gen_layer)
 
