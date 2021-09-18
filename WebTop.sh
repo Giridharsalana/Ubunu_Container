@@ -5,6 +5,7 @@ docker run -d \
   -e TZ=Europe/London \
   -p 3000:3000 \
   -v /workspace/Ubunu_Conatiner/WebTop:/config:z \
+  -v /var/run/docker.sock:/var/run/docker.sock \
   --shm-size="4gb" \
   --restart unless-stopped \
   ghcr.io/linuxserver/webtop:ubuntu-xfce
