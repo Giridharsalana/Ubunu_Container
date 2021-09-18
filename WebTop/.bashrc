@@ -83,3 +83,4 @@ fi
 
 
 alias c="clear"
+alias g="gvim"
